@@ -1,0 +1,28 @@
+{
+  "name": "clementinejs-beginner",
+  "version": "1.0.1",
+  "description": "A beginner-level MEAN stack boilerplate.",
+  "main": "server.js",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/johnstonbl01/clementinejs-beginner"
+  },
+  "homepage": "http://johnstonbl01.github.io/clementinejs-beginner/",
+  "bugs": "https://github.com/johnstonbl01/clementinejs-beginner/issues",
+  "keywords": [
+    "MEAN",
+    "MongoDB",
+    "Express",
+    "Angular",
+    "Node",
+    "javascript",
+    "boilerplate"
+  ],
+  "author": "Blake Johnston",
+  "license": "MIT",
+  "homepage": "http://johnstonbl01.github.io/clementinejs/",
+  "dependencies": {
+    "express": "^4.12.4",
+    "mongodb": "^2.0.33"
+  }
+}
