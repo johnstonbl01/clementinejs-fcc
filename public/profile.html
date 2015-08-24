@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+
+<html ng-app="clementineApp">
+
+	<head>
+		<title>Clementine.js - A beginner level MEAN stack application</title>
+		
+		<link href="http://fonts.googleapis.com/css?family=Roboto:400,500" rel="stylesheet" type="text/css">
+		<link href="/public/css/main.css" rel="stylesheet" type="text/css">
+	</head>
+
+	<body>
+		<div class="container" ng-controller="userController">
+			<div class="twitter-profile">
+				<img src="/public/img/twitter_logo_32x26.png" alt="twitter logo" />
+				<p><span>ID: </span>{{ twitterId }}</p>
+				<p><span>Username: </span>@{{ userName }}</p>
+				<p><span>Display Name: </span>{{ displayName }}</p>
+				<a class="menu" href="/">Home</a>
+				<p id="menu-divide">|</p>
+				<a class="menu" href="/logout">Logout</a>
+			</div>
+		</div>
+		
+		<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/angularjs/1.3.15/angular.js"></script>
+		<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/angularjs/1.3.15/angular-resource.min.js"></script>
+		<script type="text/javascript" src="controllers/clickController.client.js"></script>
+		<script type="text/javascript" src="factories/userFactory.js"></script>
+		<script type="text/javascript" src="controllers/userController.client.js"></script>
+	</body>
+
+</html>
