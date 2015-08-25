@@ -1,33 +1,20 @@
-### FCC Boilerplate
+# Clementine.js Beginner Boilerplate
 
-#### About
+## Overview
 
-The FCC version of Clementine.js is meant as a complementary boilerplate to the [Free Code Camp curriculum](http://www.freecodecamp.com). This version includes Twitter authentication using [Passport](http://passportjs.org/).
+TBC
 
-The following features are absent from this version of the boilerplate:
+## Versions
 
-- Jade
-- Mongoose
-- Gulp
-- Sass
-- Bower
-- Angular custom directive example
+- [Standard](https://github.com/johnstonbl01/clementinejs): A MEAN stack boilerplate -- this version has the most "bells and whistles."
+- [Bare](https://github.com/johnstonbl01/clementinejs-bare): A stripped down version of the boilerplate for quick prototyping
+- [Beginner](https://github.com/johnstonbl01/clementinejs-beginner): A simplified version of the boilerplate intended for developers new to JavaScript and the MEAN stack.
 
-I believe that the MEAN stack is a great place for new developers to begin learning. Why? Using this stack, a novice can gain exposure to the entire stack without having to learn another programming langugae. Eventually, it will be useful to pick up additional languages (i.e. SQL), but in the beginning it's really appealing to learn the ropes using a single language.
+## Installation
 
-The ubiquity of JavaScript adds to its appeal, and is also a reason for the popularity of the MEAN stack. Each of the platforms and frameworks included in the MEAN stack use JavaScript only. It's easy to see the appeal, and the ease of standing up a new project using this stack makes for an additional bonus.
+Installation of the boilerplate has three prerequisites: Node.js / NPM, MongoDB and Yeoman. The instructions for these are detailed below, followed by installation instructions for Clementine.js.
 
-If you are completely new to programming, and wish to understand how these pieces fit together, there is a [tutorial included in the documentation](http://johnstonbl01.github.io/clementinejs/tutorials/tutorial-beginner.html) which will walk through how to build this small application step-by-step.
-
-#### Documentation
-
-Full documentation for all versions of the Clementine.js boilerplate [can be found here](http://johnstonbl01.github.io/clementinejs). 
-
-#### Installation
-
-Installation of the boilerplate has two prerequisites: Node.js / NPM and MongoDB. The instructions for these are detailed below, followed by installation instructions for Clementine.js.
-
-##### Node.js & NPM
+### Node.js & NPM
 
 _Note:_ The Node insallation installs both Node & NPM.
 
@@ -48,32 +35,47 @@ _Option 2_ - Install via LinuxBrew
 
 First, ensure [LinuxBrew](http://brew.sh/linuxbrew/) is installed. Then, enter the below into the Linux terminal:
 ```
-$ ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/linuxbrew/go/install)"
+$ brew install node
 ```
 
-##### MongoDB
+### MongoDB
 
 MongoDB has great installation instructutions for MAC OSX, Windows and Linux. [See this page.](http://docs.mongodb.org/manual/installation/)
 
-##### Clementine.js
+### Yeoman
+
+TBC
+
+### Clementine.js
 
 TBD
 
-##### Starting the App
+### Starting the App
 
 To start the app, make sure you're in the project directory and type `node server.js` into the terminal. This will start the Node server and connect to MongoDB.
 
 You should the following messages within the terminal window:
-
-```bash
+```
+MongoDB successfully connected on port 27017.
 Node.js listening on port 3000...
 ```
-
 Next, open your browser and enter `http://localhost:3000/`. Congrats, you're up and running!
 
 ## Contributing
 
 TBD
+
+## Documentation
+
+Complete documentation can be [found here](http://johnstonbl01.github.io/clementinejs).
+
+### Tutorial
+
+You can find a complete step-by-step tutorial on how to create this app from the ground up [here](http://johnstonbl01.github.io/clementinejs/tutorials/tutorial-passport.html).
+
+## Features
+
+TBC
 
 ## License
 
