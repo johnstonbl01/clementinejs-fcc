@@ -3,6 +3,15 @@
 body {
 	font-family: 'Roboto', sans-serif;
 	font-size: 16px;
+	margin: 0;
+	padding: 0;
+}
+
+header {
+	color: #00BCD4;
+	height: 56px;
+	margin: 0 0 30px 0;
+	text-align: center;
 }
 
 p {
@@ -12,6 +21,59 @@ p {
 .container p {
 	text-align: center;
 	padding: 0;
+}
+
+/****** Header Styling ******/
+
+header p {
+	margin: 16px 0 5px 0;
+}
+
+.menu {
+	text-decoration: none;
+	padding: 6px;
+	margin: 0;
+	color: #727272;
+}
+
+.menu:visited {
+	color: #727272;
+}
+
+.menu:hover {
+	color: #FFA000;
+}
+
+.menu:active {
+	color: #FF630D;
+}
+
+header a ~ p {
+	margin: 0;
+	padding: 0;
+	display: inline;
+	color: #ECEFF1;
+}
+
+/****** Login Styling ******/
+
+.login {
+	margin: 86px auto 0 auto;
+	text-align: center;
+}
+
+#login-btn {
+	width: 225px;
+}
+
+.btn p {
+	margin: 5px 0 0 0;
+	padding: 0;
+}
+
+.btn > img {
+	float: left;
+	margin-left: 10px
 }
 
 /****** Logo Div Styling ******/
@@ -62,4 +124,60 @@ img {
 .btn-delete {	/* Styling for delete button */
 	background-color: #ECEFF1;
 	color: #212121;
+}
+
+/****** Profile Styling ******/
+
+.twitter-profile {
+	width: 350px;
+	height: 160px;
+	border-radius: 3px;
+	margin: 86px auto 0 auto;
+	background-color: #00BCD4;
+	text-align: center;
+	color: #FFFFFF;
+}
+
+.twitter-profile p:first-child {
+	padding-top: 16px;
+}
+
+.twitter-profile p:nth-child(4) {
+	margin-bottom: 16px
+}
+
+.twitter-profile p {
+	margin: 0 0 0 16px;
+	text-align: left;
+}
+
+span {
+	font-weight: 500;
+}
+
+.twitter-profile > img {
+	padding-top: 16px;
+	margin-bottom: 16px;
+}
+
+.twitter-profile .menu {
+	color: #FFFFFF;
+}
+
+.twitter-profile .menu:visited {
+	color: #FFFFFF;
+}
+
+.twitter-profile .menu:hover {
+	color: #FFA000;
+}
+
+.twitter-profile .menu:active {
+	color: #FF630D;
+}
+
+#menu-divide {
+	color: #FFFFFF;
+	display: inline;
+	margin: 0;
 }
