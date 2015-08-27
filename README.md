@@ -1,8 +1,10 @@
 # Clementine.js Beginner Boilerplate
 
+**Note**: Clementine.js is currently being transitioned to a Yeoman generator and has not yet been published. The installation steps below will not work at this time.
+
 ## Overview
 
-TBC
+The [Free Code Camp](http://www.freecodecamp.com) version of Clementine.js is meant for use when completing projects as part of the FCC curriculum. This version includes Twitter authentication through Passport.
 
 ## Versions
 
@@ -44,7 +46,13 @@ MongoDB has great installation instructutions for MAC OSX, Windows and Linux. [S
 
 ### Yeoman
 
-TBC
+Yeoman is simple to install:
+
+```bash
+$ npm install -g yo
+```
+
+Note that it should be installed globally.
 
 ### Clementine.js
 
@@ -75,7 +83,17 @@ You can find a complete step-by-step tutorial on how to create this app from the
 
 ## Features
 
-TBC
+| Features 				| Beginner 	| Standard 	| Bare 		| FCC 		|
+|:---------				|:--------:	|:--------:	|:---------:|:---------:|
+| Commented Code		| _Yes_ 	| _No_ 		| _No_		| _No_		|
+| Example Controller 	| _Yes_ 	| _Yes_		| _Yes_		| _Yes_		|
+| Example Directive 	| _No_ 		| _Yes_		| _No_		| _No_		|
+| Jade					| _No_ 		| _Yes_ 	| _Yes_	 	| _No_		|
+| Mongoose				| _No_		| _Yes_		| _Yes_		| _Yes_		|
+| Gulp				 	| _No_		| _Yes_		| _Yes_		| _No_		|
+| Sass					| _No_		| _Yes_		| _Yes_		| _No_		|
+| Bower					| _Yes_		| _Yes_		| _Yes_		| _No_		|
+| Authentication		| _No_		| _No_		| _No_		| _Yes_		|
 
 ## License
 
