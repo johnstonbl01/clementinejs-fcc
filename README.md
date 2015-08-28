@@ -44,7 +44,7 @@ $ brew install node
 
 MongoDB has great installation instructutions for MAC OSX, Windows and Linux. [See this page.](http://docs.mongodb.org/manual/installation/)
 
-### Yeoman
+### Install Yeoman
 
 Yeoman is simple to install:
 
@@ -54,9 +54,21 @@ $ npm install -g yo
 
 Note that it should be installed globally.
 
-### Clementine.js
+### Install Clementine.js
 
-TBD
+Clementine.js is easy to setup in the project directory of your choice! In the terminal:
+
+```bash
+$ mkdir your-project
+$ cd your-project
+$ yo clementinejs:fcc
+```
+
+It's that easy!
+
+### Setup Twitter Authentication
+
+Please follow [this guide](/clementinejs/tutorials/tutorial-passport.html#twitter-app-setup) to register the application with Twitter and get API keys / secrets. This API information will also need to be added to the `app/config/auth.js` file.
 
 ### Starting the App
 
@@ -71,7 +83,7 @@ Next, open your browser and enter `http://localhost:3000/`. Congrats, you're up 
 
 ## Contributing
 
-TBD
+This is an open-source project, and contributions are always welcome! To see ways to contribute, please review the [contribution guidelines](http://johnstonbl01.github.io/clementinejs/developers/contributing.html).
 
 ## Documentation
 
