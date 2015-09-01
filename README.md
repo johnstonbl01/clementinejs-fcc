@@ -1,4 +1,4 @@
-# Clementine.js Beginner Boilerplate
+# Clementine.js FCC Boilerplate
 
 **Note**: Clementine.js is currently being transitioned to a Yeoman generator and has not yet been published. The installation steps below will not work at this time.
 
@@ -59,6 +59,7 @@ Note that it should be installed globally.
 Clementine.js is easy to setup in the project directory of your choice! In the terminal:
 
 ```bash
+$ npm install generator-clementinejs
 $ mkdir your-project
 $ cd your-project
 $ yo clementinejs:fcc
