@@ -1,35 +1,33 @@
 'use strict';
 
 (function () {
-	angular
-		.module('clementineApp', ['ngResource'])
-		.controller('clickController',
-			['$scope',
-			'$resource',
 
-			function ($scope, $resource) {
+   var addButton = document.querySelector('.btn-add');
+   var deleteButton = document.querySelector('.btn-delete');
+   var clickNbr = document.querySelector('#click-nbr');
+   var apiUrl = 'http://localhost:3000/api/:id/clicks';
 
-				var Click = $resource('/api/clicks');
+   function updateClickCount (data) {
+      var clicksObject = JSON.parse(data);
+      clickNbr.innerHTML = clicksObject.clicks;
+   }
 
-				$scope.getClicks = function () {
-					Click.query(function (results) {
-						$scope.clicks = results[0].clicks;
-					});
-				};
+   ajaxFunctions.ready(ajaxFunctions.ajaxRequest('GET', apiUrl, updateClickCount));
 
-				$scope.getClicks();
+   addButton.addEventListener('click', function () {
 
-				$scope.addClick = function () {
-					Click.save(function () {
-						$scope.getClicks();
-					});
-				};
+      ajaxFunctions.ajaxRequest('POST', apiUrl, function () {
+         ajaxFunctions.ajaxRequest('GET', apiUrl, updateClickCount);
+      });
 
-				$scope.resetClicks = function () {
-					Click.remove(function () {
-						$scope.getClicks();
-					});
-				};
+   }, false);
 
-		}]);
+   deleteButton.addEventListener('click', function () {
+
+      ajaxFunctions.ajaxRequest('DELETE', apiUrl, function () {
+         ajaxFunctions.ajaxRequest('GET', apiUrl, updateClickCount);
+      });
+
+   }, false);
+
 })();

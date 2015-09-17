@@ -55,6 +55,10 @@ header a ~ p {
 	color: #ECEFF1;
 }
 
+#display-name {
+	font-weight: 400;
+}
+
 /****** Login Styling ******/
 
 .login {
@@ -127,6 +131,10 @@ img {
 	color: #212121;
 }
 
+#click-nbr {
+	font-weight: 400;
+}
+
 /****** Profile Styling ******/
 
 .github-profile {
@@ -150,6 +158,10 @@ img {
 .github-profile p {
 	margin: 0 0 0 16px;
 	text-align: left;
+}
+
+.profile-value {
+	font-weight: 400;
 }
 
 span {

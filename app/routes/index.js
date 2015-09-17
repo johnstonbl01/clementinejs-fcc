@@ -36,8 +36,8 @@ module.exports = function (app, passport) {
 			res.sendFile(path + '/public/profile.html');
 		});
 
-	app.route('/api/user')
-		.get(isLoggedIn, function (req, res) {
+	app.route('/api/:id')
+		.get(function (req, res) {
 			res.json(req.user.github);
 		});
 
@@ -50,7 +50,7 @@ module.exports = function (app, passport) {
 			failureRedirect: '/login'
 		}));
 
-	app.route('/api/clicks')
+	app.route('/api/:id/clicks')
 		.get(clickHandler.getClicks)
 		.post(clickHandler.addClick)
 		.delete(clickHandler.resetClicks);

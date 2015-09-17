@@ -10,7 +10,7 @@
 	</head>
 
 	<header ng-controller="userController">
-		<p>Welcome, {{ displayName }}!</p>
+		<p>Welcome, <span id="display-name"></span>!</p>
 		<a class="menu" href="/profile">Profile</a>
 		<p>|</p>
 		<a class="menu" href="/logout">Logout</a>
@@ -24,18 +24,16 @@
 		</div>
 	
 		<div class="container" ng-controller="clickController">
-			<p>You have clicked the button {{ clicks }} times.</p>
+			<p>You have clicked the button <span id="click-nbr"></span> times.</p>
 			<br />
 			<div class="btn-container">
-				<button type="submit" ng-click="addClick()" class="btn">CLICK ME!</button>
+				<button type="submit" ng-click="addClick()" class="btn btn-add">CLICK ME!</button>
 				<button ng-click="resetClicks()" class="btn btn-delete">RESET</button>
 			</div>
 		</div>
-	
-		<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/angularjs/1.3.15/angular.js"></script>
-		<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/angularjs/1.3.15/angular-resource.min.js"></script>
+		
+		<script type="text/javascript" src="common/ajax-functions.js"></script>
 		<script type="text/javascript" src="controllers/clickController.client.js"></script>
-		<script type="text/javascript" src="factories/userFactory.js"></script>
 		<script type="text/javascript" src="controllers/userController.client.js"></script>
 	</body>
 

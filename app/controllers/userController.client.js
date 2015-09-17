@@ -1,21 +1,33 @@
 'use strict';
 
 (function () {
-	angular
-		.module('clementineApp')
-		.controller('userController', ['$scope', 'userFactory', function ($scope, userFactory) {
 
-			function getUserData () {
-				userFactory.getData()
-					.then(function (res) {
-						$scope.userName = res.data.username;
-						$scope.displayName = res.data.displayName;
-						$scope.githubId = res.data.id;
-						$scope.publicRepos = res.data.publicRepos;
-					});
-			}
+   var profileId = document.querySelector('#profile-id') || null;
+   var profileUsername = document.querySelector('#profile-username') || null;
+   var profileRepos = document.querySelector('#profile-repos') || null;
+   var displayName = document.querySelector('#display-name');
+   var apiUrl = 'http://localhost:3000/api/:id';
 
-			getUserData();
+   function updateHtmlElement (data, element, userProperty) {
+      element.innerHTML = data[userProperty];
+   }
 
-		}]);
+   ajaxFunctions.ready(ajaxFunctions.ajaxRequest('GET', apiUrl, function (data) {
+      var userObject = JSON.parse(data);
+
+      updateHtmlElement(userObject, displayName, 'displayName');
+
+      if (profileId !== null) {
+         updateHtmlElement(userObject, profileId, 'id');   
+      }
+
+      if (profileUsername !== null) {
+         updateHtmlElement(userObject, profileUsername, 'username');   
+      }
+
+      if (profileRepos !== null) {
+         updateHtmlElement(userObject, profileRepos, 'publicRepos');   
+      }
+
+   }));
 })();
