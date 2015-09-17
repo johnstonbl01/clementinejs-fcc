@@ -11,11 +11,12 @@
 
 	<body>
 		<div class="container" ng-controller="userController">
-			<div class="twitter-profile">
-				<img src="/public/img/twitter_logo_32x26.png" alt="twitter logo" />
-				<p><span>ID: </span>{{ twitterId }}</p>
-				<p><span>Username: </span>@{{ userName }}</p>
+			<div class="github-profile">
+				<img src="/public/img/gh-mark-32px.png" alt="github logo" />
+				<p><span>ID: </span>{{ githubId }}</p>
+				<p><span>Username: </span>{{ userName }}</p>
 				<p><span>Display Name: </span>{{ displayName }}</p>
+				<p><span>Repositories: </span>{{ publicRepos }}</p>
 				<a class="menu" href="/">Home</a>
 				<p id="menu-divide">|</p>
 				<a class="menu" href="/logout">Logout</a>

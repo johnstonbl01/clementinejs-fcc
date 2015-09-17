@@ -64,10 +64,11 @@ header a ~ p {
 
 #login-btn {
 	width: 225px;
+	padding: 7px 5px;
 }
 
 .btn p {
-	margin: 5px 0 0 0;
+	margin: 8px 0 0 0;
 	padding: 0;
 }
 
@@ -128,25 +129,25 @@ img {
 
 /****** Profile Styling ******/
 
-.twitter-profile {
+.github-profile {
 	width: 350px;
-	height: 160px;
+	height: 200px;
 	border-radius: 3px;
 	margin: 86px auto 0 auto;
-	background-color: #00BCD4;
+	background-color: #EEE;
 	text-align: center;
-	color: #FFFFFF;
+	color: #000;
 }
 
-.twitter-profile p:first-child {
+.github-profile p:first-child {
 	padding-top: 16px;
 }
 
-.twitter-profile p:nth-child(4) {
+.github-profile p:nth-child(5) {
 	margin-bottom: 16px
 }
 
-.twitter-profile p {
+.github-profile p {
 	margin: 0 0 0 16px;
 	text-align: left;
 }
@@ -155,24 +156,16 @@ span {
 	font-weight: 500;
 }
 
-.twitter-profile > img {
+.github-profile > img {
 	padding-top: 16px;
 	margin-bottom: 16px;
 }
 
-.twitter-profile .menu {
-	color: #FFFFFF;
-}
-
-.twitter-profile .menu:visited {
-	color: #FFFFFF;
-}
-
-.twitter-profile .menu:hover {
+.github-profile .menu:hover {
 	color: #FFA000;
 }
 
-.twitter-profile .menu:active {
+.github-profile .menu:active {
 	color: #FF630D;
 }
 

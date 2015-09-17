@@ -59,7 +59,7 @@ Note that it should be installed globally.
 Clementine.js is easy to setup in the project directory of your choice! In the terminal:
 
 ```bash
-$ npm install generator-clementinejs
+$ npm install -g generator-clementinejs
 $ mkdir your-project
 $ cd your-project
 $ yo clementinejs:fcc

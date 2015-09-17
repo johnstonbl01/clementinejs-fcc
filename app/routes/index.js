@@ -38,14 +38,14 @@ module.exports = function (app, passport) {
 
 	app.route('/api/user')
 		.get(isLoggedIn, function (req, res) {
-			res.json(req.user.twitter);
+			res.json(req.user.github);
 		});
 
-	app.route('/auth/twitter')
-		.get(passport.authenticate('twitter'));
+	app.route('/auth/github')
+		.get(passport.authenticate('github'));
 
-	app.route('/auth/twitter/callback')
-		.get(passport.authenticate('twitter', {
+	app.route('/auth/github/callback')
+		.get(passport.authenticate('github', {
 			successRedirect: '/',
 			failureRedirect: '/login'
 		}));

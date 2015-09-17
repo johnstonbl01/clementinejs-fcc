@@ -10,7 +10,8 @@
 					.then(function (res) {
 						$scope.userName = res.data.username;
 						$scope.displayName = res.data.displayName;
-						$scope.twitterId = res.data.id;
+						$scope.githubId = res.data.id;
+						$scope.publicRepos = res.data.publicRepos;
 					});
 			}
 
