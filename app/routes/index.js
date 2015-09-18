@@ -37,7 +37,7 @@ module.exports = function (app, passport) {
 		});
 
 	app.route('/api/:id')
-		.get(function (req, res) {
+		.get(isLoggedIn, function (req, res) {
 			res.json(req.user.github);
 		});
 
@@ -51,7 +51,7 @@ module.exports = function (app, passport) {
 		}));
 
 	app.route('/api/:id/clicks')
-		.get(clickHandler.getClicks)
-		.post(clickHandler.addClick)
-		.delete(clickHandler.resetClicks);
+		.get(isLoggedIn, clickHandler.getClicks)
+		.post(isLoggedIn, clickHandler.addClick)
+		.delete(isLoggedIn, clickHandler.resetClicks);
 };
