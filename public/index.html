@@ -1,15 +1,15 @@
 <!DOCTYPE html>
 
-<html ng-app="clementineApp">
+<html>
 
 	<head>
-		<title>Clementine.js - A beginner level MEAN stack application</title>
+		<title>Clementine.js - The elegant and lightweight full stack JavaScript boilerplate.</title>
 		
 		<link href="http://fonts.googleapis.com/css?family=Roboto:400,500" rel="stylesheet" type="text/css">
 		<link href="/public/css/main.css" rel="stylesheet" type="text/css">
 	</head>
 
-	<header ng-controller="userController">
+	<header>
 		<p>Welcome, <span id="display-name"></span>!</p>
 		<a class="menu" href="/profile">Profile</a>
 		<p>|</p>
@@ -23,12 +23,12 @@
 			<p class="clementine-text">Clementine.js</p>
 		</div>
 	
-		<div class="container" ng-controller="clickController">
+		<div class="container">
 			<p>You have clicked the button <span id="click-nbr"></span> times.</p>
 			<br />
 			<div class="btn-container">
-				<button type="submit" ng-click="addClick()" class="btn btn-add">CLICK ME!</button>
-				<button ng-click="resetClicks()" class="btn btn-delete">RESET</button>
+				<button type="submit" class="btn btn-add">CLICK ME!</button>
+				<button class="btn btn-delete">RESET</button>
 			</div>
 		</div>
 		
