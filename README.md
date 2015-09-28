@@ -35,8 +35,6 @@ $ git clone https://github.com/johnstonbl01/clementinejs-fcc.git your-project
 
 This will install the Clementine.js components into the `your-project` directory.
 
-From within the project directory, type `$ node server` to start the application, and browse to `localhost:3000` to see the application.
-
 ### Setup GitHub Authentication
 
 Please follow [this guide](/clementinejs/tutorials/tutorial-passport.html#github-app-setup) to register the application with GitHub and get API keys / secrets. This API information will also need to be added to the `app/config/auth.js` file.
@@ -48,10 +46,10 @@ To start the app, make sure you're in the project directory and type `node serve
 You should the following messages within the terminal window:
 
 ```
-Node.js listening on port 3000...
+Node.js listening on port 8080...
 ```
 
-Next, open your browser and enter `http://localhost:3000/`. Congrats, you're up and running!
+Next, open your browser and enter `http://localhost:8080/`. Congrats, you're up and running!
 
 ## Contributing
 
