@@ -37,7 +37,7 @@ This will install the Clementine.js components into the `your-project` directory
 
 ### Setup GitHub Authentication
 
-Please follow [this guide](/clementinejs/tutorials/tutorial-passport.html#github-app-setup) to register the application with GitHub and get API keys / secrets. This API information will also need to be added to the `app/config/auth.js` file.
+Please follow [this guide](http://johnstonbl01.github.io/clementinejs/tutorials/tutorial-passport.html#GitHubAppSetup) to register the application with GitHub and get API keys / secrets. This API information will also need to be added to the `app/config/auth.js` file.
 
 ### Starting the App
 
