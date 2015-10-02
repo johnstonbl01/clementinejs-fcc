@@ -2,8 +2,8 @@
 
 module.exports = {
 	'githubAuth': {
-		'clientID': 'your-id-here',
-		'clientSecret': 'your-secret-here',
-		'callbackURL': 'http://localhost:8080/auth/github/callback'
+		'clientID': process.env.GITHUB_KEY,
+		'clientSecret': process.env.GITHUB_SECRET,
+		'callbackURL': process.env.APP_URL + 'auth/github/callback'
 	}
 };
