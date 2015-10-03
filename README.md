@@ -39,7 +39,7 @@ This will install the Clementine.js components into the `your-project` directory
 
 Please follow [this guide](http://johnstonbl01.github.io/clementinejs/tutorials/tutorial-passport.html#GitHubAppSetup) to register the application with GitHub and get API keys / secrets.
 
-### Local Environmental Variables
+### Local Environment Variables
 
 Create a file named `.env` in the root directory. This file should contain:
 
