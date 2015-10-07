@@ -10,7 +10,7 @@ The [Free Code Camp](http://www.freecodecamp.com) version of Clementine.js is me
 
 There are 3 versions of Clementine.js:
 
-- [**Standard**](https://github.com/johnstonbl01/clementinejs) (this version): the simplest version of Clementine.js. Intended for those who wish for the smallest and least intrusive footprint OR to implement features on their own.
+- [**Standard**](https://github.com/johnstonbl01/clementinejs): the simplest version of Clementine.js. Intended for those who wish for the smallest and least intrusive footprint OR to implement features on their own.
 - [**Angular**](https://github.com/johnstonbl01/clementinejs-angular): a slightly more complex version of the same application. This version employs the use of AngularJS as the front-end framework.
 - **Free Code Camp (FCC)** (this version): A modified version of the standard boilerplate that is intended for use with the [Free Code Camp](http://freecodecamp.com/) curriculum.
 
