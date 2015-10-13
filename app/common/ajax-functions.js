@@ -1,6 +1,5 @@
 'use strict';
 
-var appUrl = 'http://localhost:8080/';
 var ajaxFunctions = {
    ready: function ready (fn) {
       if (typeof fn !== 'function') {

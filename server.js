@@ -1,4 +1,5 @@
 'use strict';
+require('dotenv').load();
 
 var express = require('express');
 var routes = require('./app/routes/index.js');
@@ -7,10 +8,11 @@ var passport = require('passport');
 var session = require('express-session');
 
 var app = express();
-require('dotenv').load();
 require('./app/config/passport')(passport);
 
-mongoose.connect('mongodb://localhost:27017/clementinejs');
+mongoose.connect(process.env.MONGOLAB_URI);
+
+app.set('view engine', 'hbs');
 
 app.use('/controllers', express.static(process.cwd() + '/app/controllers'));
 app.use('/public', express.static(process.cwd() + '/public'));
