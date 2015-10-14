@@ -39,7 +39,7 @@ This will install the Clementine.js components into the `your-project` directory
 
 ### Setup GitHub Authentication
 
-Please follow [this guide](http://johnstonbl01.github.io/clementinejs/tutorials/tutorial-passport.html#GitHubAppSetup) to register the application with GitHub and get API keys / secrets.
+Please follow [this guide](http://www.clementinejs.com/tutorials/tutorial-passport.html#GitHubAppSetup) to register the application with GitHub and get API keys / secrets.
 
 ### Local Environment Variables
 
@@ -48,6 +48,8 @@ Create a file named `.env` in the root directory. This file should contain:
 ```
 GITHUB_KEY=your-client-id-here
 GITHUB_SECRET=your-client-secret-here
+MONGO_URI=mongodb://localhost:27017/clementinejs
+PORT=8080
 APP_URL=http://localhost:8080/
 ```
 
@@ -63,17 +65,21 @@ Node.js listening on port 8080...
 
 Next, open your browser and enter `http://localhost:8080/`. Congrats, you're up and running!
 
+### c9.io Setup
+
+If you're using c9.io, please [reference the documentation](http://www.clementinejs.com/versions/fcc.html#c9.ioSetup) for instructions to get Clementine.js working in the c9 environment.
+
 ## Contributing
 
-This is an open-source project, and contributions are always welcome! To see ways to contribute, please review the [contribution guidelines](http://johnstonbl01.github.io/clementinejs/developers/contributing.html).
+This is an open-source project, and contributions are always welcome! To see ways to contribute, please review the [contribution guidelines](http://www.clementinejs.com/developers/contributing.html).
 
 ## Documentation
 
-Complete documentation can be [found here](http://johnstonbl01.github.io/clementinejs).
+Complete documentation can be [found here](http://www.clementinejs.com).
 
 ### Tutorial
 
-You can find a complete step-by-step tutorial on how to create this app from the ground up [here](http://johnstonbl01.github.io/clementinejs/tutorials/tutorial-passport.html).
+You can find a complete step-by-step tutorial on how to create this app from the ground up [here](http://www.clementinejs.com/tutorials/tutorial-passport.html).
 
 ## Features
 
