@@ -5,7 +5,7 @@
    var addButton = document.querySelector('.btn-add');
    var deleteButton = document.querySelector('.btn-delete');
    var clickNbr = document.querySelector('#click-nbr');
-   var apiUrl = appUrl + 'api/:id/clicks';
+   var apiUrl = appUrl + '/api/:id/clicks';
 
    function updateClickCount (data) {
       var clicksObject = JSON.parse(data);
