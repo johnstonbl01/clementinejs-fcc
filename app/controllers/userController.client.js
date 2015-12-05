@@ -15,7 +15,11 @@
    ajaxFunctions.ready(ajaxFunctions.ajaxRequest('GET', apiUrl, function (data) {
       var userObject = JSON.parse(data);
 
-      updateHtmlElement(userObject, displayName, 'displayName');
+      if (userObject.displayName !== null) {
+         updateHtmlElement(userObject, displayName, 'displayName');
+      } else {
+         updateHtmlElement(userObject, displayName, 'username');
+      }
 
       if (profileId !== null) {
          updateHtmlElement(userObject, profileId, 'id');   
