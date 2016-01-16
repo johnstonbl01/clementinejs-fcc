@@ -65,6 +65,12 @@ Node.js listening on port 8080...
 
 Next, open your browser and enter `http://localhost:8080/`. Congrats, you're up and running!
 
+#### MongoDB Server
+Note that the application will expect a mongodb server to be available. As
+specified in your `.env` file's `MONGO_URI` key. If you do not have a server
+running, you can start one by running the command: `mongod --port 27017`. Please
+modify the actual port specified to match your `.env` file.
+
 ### c9.io Setup
 
 If you're using c9.io, please [reference the documentation](http://www.clementinejs.com/versions/fcc.html#c9.ioSetup) for instructions to get Clementine.js working in the c9 environment.
