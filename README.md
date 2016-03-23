@@ -38,8 +38,8 @@ $ git clone https://github.com/johnstonbl01/clementinejs-fcc.git your-project
 To install the dependencies, enter the following in your terminal:
 
 ```
-cd your-project
-npm install
+$ cd your-project
+$ npm install
 ```
 
 This will install the Clementine.js components into the `your-project` directory.
