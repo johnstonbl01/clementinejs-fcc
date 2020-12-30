@@ -1,6 +1,6 @@
-# Deprecation
+# This Project Is No Longer Actively Maintained
 
-Heya! :wave: This package is being deprecated & moved to another repository for a new version of Clementine in early 2020. I'll link to the repo when that happens, but this repository will be archived at that time.
+Heya! :wave: This project is being archived and is no longer maintained. More information can be found at https://www.clementinejs.com.
 
 # Clementine.js FCC Boilerplate
 
